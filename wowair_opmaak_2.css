@@ -6,24 +6,30 @@ body{
 
 ul{
     list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
 
-    display:inline-block;
+ul > li {
+    width: 33.3%;
+    text-align: center;
+}
+
+ul > li:nth-child(1) {
+    text-align: left;
+}
+
+ul > li:nth-child(3) {
+    text-align: right
 }
 
 .logo {
-
-    display: flex;
-    flex-direction: flex-end;
-    margin-right: auto;
-    margin-left: auto;
-    width: 50%;
+    max-width: 50%;
 }
 
 .hart {
-    display: block;
-    margin-left: auto;
-    width: 15%;
-
+    max-width: 30%;
 }
 
 
@@ -57,27 +63,6 @@ article img{
     height: 11em;
     object-fit: cover;
     object-position: top center;
-}
-
-
-
-ul {
-    display: flex;
-}
-
-.wowairlogo {
-    display: flex;
-
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-.hartlogo {
-float: right;
-
-    width: 50%;
 }
 
 
