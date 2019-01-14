@@ -1,5 +1,5 @@
 body{
-    color: #9f238A;;
+
     font-family: sans-serif;
     font-size: 1em;
 }
@@ -24,123 +24,269 @@ ul > li:nth-child(3) {
     text-align: right
 }
 
+
+
+
 section article p{
 
 }
 
 header nav ul li:first-of-type img{
-    max-width: 30%;
-    margin-top: 4px;
+    width: 30%;
+    max-width: 4em;
 }
 
 header nav ul li a img {
-    max-width: 50%;
+    width: 50%;
+    max-width: 6em;
 }
 
 header nav ul li:last-of-type img{
-      max-width: 35%;
+    width: 30%;
+    max-width: 4em;
+
 }
+
+
 
 
 
 form {
+    margin-left: 0;
     background-color: #f9f9f9;
     color: #9f238A;
-    border: 2px solid #e9e9ea;
+    border: 1px solid #e9e9ea;
 }
 
-.jeboekzoeken {
+form p {
+
     display: block;
-    margin: 8px;
+    margin: 0.5em;
     background-color: #720e5a;
-    padding: 15px 15px;
+    padding: 0.7em 1em;
     color: white;
-    font-weight: 900;
+    font-weight: 100;
     font-size: 1.15em;
     text-transform: uppercase;
-
+    text-align: center;
     background-image: url(fotos/boekicon1.png);
-    background-size: 8%;
-    background-position: left;
-    background-repeat: no-repeat;
-    padding-left: 6em;
-}
-
-
-
-form div {
-    display: flex;
-    justify-content: space-between;
-    margin: 1em 2em;
-}
-
-div input[type=button] {
-    color: black;
-    background-color: white;
-    font-size: 1em;
-    border: 1px solid #ccc;
-    width: 60%;
-    padding: 0.7em;
-
-}
-
-div input[type=button]:hover {
-    color: white;
-    background-color: #9f238A;
-}
-
-form h1{
-    text-transform: uppercase;
-    font-size: 2em;
-    margin: 2em 2em 0em 2em;
-    color: #9f238A;
-    font-size: 1em;
+    background-size: 9%;
+    background-position: 1em center;
+    background-repeat: no-repeat; */
 }
 
 fieldset{
     border: none;
-    margin: 2em 2em 1em 0em;
+
 }
 
-fieldset input[type=submit] {
+
+form fieldset legend{
+
+    text-transform: uppercase;
+    color: #9f238A;
     font-size: 1em;
+    padding-top: 0.5em;
+}
+
+form fieldset div {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+form fieldset div label {
+    color: black;
+    background-color: white;
+    font-size: 0.8em;
+    border: 1px solid #ccc;
+    width: 25%;
+    padding: 1em;
+    text-align: center;
+
+}
+
+form fieldset div input {
+    left: -999px;
+    color: black;
+    background-color: white;
+    font-size: 0.8em;
+    border: 1px solid #ccc;
+    position: absolute;
+}
+
+input[type=checkbox]:checked + label{
+    background-color: #ffdf6a;  #ffdf6a
+    color: #9f238A;
+}
+
+form fieldset div select{
+    background-color: white;
+    font-size: 0.8em;
+    border: 1px solid #ccc;
+    width: 48%;
+    padding: 0.5em;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+     border-radius: 0;
+}
+
+
+select {
+  background-image:
+    linear-gradient(45deg, transparent 50%, black 50%),
+    linear-gradient(135deg, black 50%, transparent 50%),
+    linear-gradient(to right, white, white);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
+}
+
+
+form fieldset input[type=text] {
+    font-size: 0.8em;
+    font-weight: 100;
+    border: 1px solid #ccc;
+    width: 48%;
+    padding: 1em;
+    display: inline-block;
+    border-radius: 0;
+    margin-bottom:  1em;
+}
+
+
+fieldset input[type=submit] {
+    font-size: 0.9em;
     float: right;
-    padding: 0.4em 1em 0.5em 0.7em;
+    padding: 0.7em 1.7em 0.7em 1em;
+    background-color: #9f238A;
+    color: white;
+    border-radius: 0.2rem;
+    font-weight: 700;
+    border: 0.2px solid #808081;
+
+}
+
+form fieldset:last-of-type input {
+    font-size: 0.9em;
     background-color: #808081;
     color: white;
     border-radius: 0.2rem;
     font-weight: 700;
-
+    border: 1px solid #808081;
 }
+
+
+
 
 
 h2{
     padding-left: .9rem;
     color: black;
     font-weight: 100;
-    display: block;
-    margin: 0;
-    margin-top: 2em;
+
+    margin-top: 1em;
     margin-bottom: 0.5em;
+    font-size: 2em;
 }
 
-.containergrid{
+
+
+section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto;
+
+
 }
+
+
+
+
+
+
 
 
 article{
     border: 2px solid #d0e1e1;
-    margin-bottom: 20px;
+    margin-bottom: 2em;
+    margin-right: 0.2em;
+    margin-left: 0.2em;
+    position: relative;
+    max-width: 100%;
+    display: inline-block;
+    height: 24em;
 }
+
+
+
+
+
+
+
+@media (min-width:40em){
+   /* article{
+        min-width: 15em;
+        max-width: 48%;
+    }*/
+
+    section {
+    grid-template-columns:auto auto;
+
+  }
+
+
+    #bi{
+    background-image: none;
+}
+}
+
+
+@media (min-width:60em){
+   /* article{
+        max-width: 32%;
+        }*/
+
+    form{
+        min-width: 15em;
+        max-width: 30em;
+
+    }
+
+        section {
+    grid-template-columns:33.33% 33.33% 33.33%;
+
+  }
+
+
+    #bi{
+    background-image: url(fotos/reykjavik.jpg);
+    background-position: center;
+    background-repeat: no-repeat; */
+    width: 100%;
+    padding: 1em;
+
+
+
+
+}
+}
+
+
+
+
 
 article header {
     position: relative;
     height: 11em;
-    grid-column: 1 / 3;
-    background-color: aqua;
 }
 
 
@@ -148,8 +294,7 @@ article header img{
     width: 100%;
     height: 11em;
     object-fit: cover;
-    object-position: top center;
-
+    object-position: center;
 }
 
 
@@ -157,30 +302,70 @@ article header span{
     text-transform: uppercase;
     background-color: #9f238A;
     color: white;
-    padding: 0 4px;
-    font-size: 0.8em;
+    padding: 0.1em 0.5em;
+    font-size: 1em;
     position: absolute;
     bottom: 0em;
     left: 1em;
 }
 
 article footer{
-    background-color: greenyellow;
-    grid-row-start: 2;
+    margin: 1em;
+    display: grid;
+    grid-template-rows: 9em 2em;
+
 }
+
+article footer h3{
+    grid-column: 1/4;
+    margin: 0;
+    font-size: 1.6em;
+    font-weight: 100;
+
+}
+
+
+article footer span{
+    grid-column: 3/4;
+    display: block;
+    font-size: 0.7em;
+    justify-self: center;
+    align-self: end;
+}
+
+article .img1{
+    display: block;
+    grid-column: 1/2;
+    align-self: center;
+    height: 1.6em;
+    justify-self: center;
+}
+
+.img:checked {
+    background-image: url(icoontjes/sterren_vol.png)
+}
+
 
 article footer p{
-    padding-left: .9rem;
-    color: black;
     margin: 0;
-    margin-bottom: 20px;
-    background-color: mediumvioletred;
-    grid-column-start: 2;
+    font-size: 1em;
+    font-weight: 200;
+    grid-column: 1/2;
+
 }
 
-footer h2{
-    grid-column-start: 1;
+article footer img{
+    display: block;
+    color: white;
+    height: 2.5em;
+    grid-column: 3/4;
+    justify-self: end;
+    justify-self: center;
+    align-self: end;
 }
+
+
+
 
 
 
@@ -191,9 +376,19 @@ footer h2{
 }
 
 
+div input[type=button]:hover {
+    color: white;
+    background-color: #9f238A;
+}
+
+
 
 .verhaal1{
     width: 100%;
+    height: 40em;
+    object-fit: cover;
+    object-position: center;
 }
+
 
 

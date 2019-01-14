@@ -13,85 +13,246 @@
     <header>
         <nav>
             <ul>
-                <li><img src="fotos/hamburgermenu.png" alt="hamburger menu" ></li>
-                <li><a href="wowair_index_2.html"><img src="fotos/wowairlogo1.png" alt="logo"> </a></li>
-                <li><img src="fotos/harticon1.png" alt="hart"> </li>
+                <li><img src="fotos/search_icoon.png" alt="hart"></li>
+                <li><a href="index.html"><img src="fotos/wowairlogo1.png" alt="logo"> </a></li>
+                <li><img src="fotos/download_icoon.png" alt="hart"> </li>
+
             </ul>
         </nav>
     </header>
 
+<div id="bi">
 
     <form action="wowair_verhaal.html">
+        <p>Je boek zoeken</p>
 
-        <p class="jeboekzoeken">Je boek zoeken</p>
+       <fieldset>
+            <legend>zoek een verhaal</legend>
+            <input type="text" name="typen" value="typen" />
 
-       <h1>categorieën</h1>
-        <div>
-
-            <input type="button" value="Liefde" name="Liefde" />
-            <input type="button" value="Fantasie" name="Liefde" />
-            <input type="button" value="Actie" name="Liefde" />
-            <input type="button" value="Horror" name="Liefde" />
-
-        </div>
-             <h1>tijdsduur</h1>
-        <div>
-
-
-            <input type="button" value="0-5 min" name="tijd" />
-            <input type="button" value="5-15 min" name="tijd" />
-            <input type="button" value="15-30 min" name="tijd" />
-        </div>
+            <input type="submit" name="zoeken" value="ZOEKEN" />
+        </fieldset>
 
         <fieldset>
+            <legend>categorieën</legend>
+            <div>
+                <input type="checkbox" id="romantiek" />
+                <label for="romantiek">Romantiek</label>
 
+                <input type="checkbox" id="humor" />
+                <label for="humor">Humor</label>
+
+                <input type="checkbox" id="thriller" />
+                <label for="thriller">Thriller</label>
+
+                <input type="checkbox" id="fictie" />
+                <label for="fictie">Fictie</label>
+            </div>
+        </fieldset>
+
+
+        <fieldset>
+            <div>
+                <select name="tijden">
+                <option selected >Tijdsduur</option>
+                <option value="0-5">0 tot 5 min</option>
+                <option value="5-15">5 tot 15 min</option>
+                <option value="15-30">15 tot 30 min</option>
+            </select>
+
+                <select name="Populariteit">
+                <option selected hidden>Populariteit</option>
+                <option value="0-5">Populariteit</option>
+                <option value="5-15">Relevantie</option>
+                <option value="15-30">Beoordeling</option>
+            </select>
+            </div>
+        </fieldset>
+
+
+
+        <fieldset>
             <input type="submit" name="zoeken" value="ZOEKEN" />
         </fieldset>
     </form>
 
+</div>
 
-
+    <h2>Aanbevolen Verhalen</h2>
     <section>
 
-        <h2>Aanbevolen Verhalen</h2>
-
-        <article class="containergrid">
+        <article>
             <header>
-               <a href="wowair_verhaal.html"><img href="wowair_verhaal.html" src="fotos/verliefd%201.png" alt="verliefd"></a>
-                <span>4 sterren</span>
-                </header>
+                <a href="wowair_verhaal.html"><img href="wowair_verhaal.html" src="verhalen/verliefd.png" alt="verliefd"></a>
+                <span>Romantiek</span>
+            </header>
+            <footer>
+                <h3>Presentator die ten onrechte denkt aansluiting te hebben gevonden bij ‘de kids’</h3>
+
+               <!-- <span>Download</span> -->
+
+               <!-- <p>15 min</p>-->
+                <img class="img1" src="icoontjes/sterren_leeg.png" alt="">
+
+                <img src="fotos/download_button.png" alt="">
+            </footer>
+        </article>
+
+        <article>
+            <header>
+                <a href="wowair_verhaal.html"><img href="wowair_verhaal.html" src="verhalen/verliefd.png" alt="verliefd"></a>
+                <span>Romantiek</span>
+            </header>
             <footer>
                 <h3>Verliefd</h3>
-                <p class="tijdsduur">Vreugde</p>
-                <p>Tijdsduur: 15 min</p>
 
+               <!-- <span>Download</span> -->
+
+               <!-- <p>15 min</p>-->
+                <img class="img1" src="icoontjes/sterren_leeg.png" alt="">
+
+                <img src="fotos/download_button.png" alt="">
+            </footer>
+        </article>
+
+            <article>
+            <header>
+                <a href="wowair_verhaal.html"><img href="wowair_verhaal.html" src="verhalen/verliefd.png" alt="verliefd"></a>
+                <span>Romantiek</span>
+            </header>
+            <footer>
+                <h3>Verliefd’</h3>
+
+               <!-- <span>Download</span> -->
+
+               <!-- <p>15 min</p>-->
+                <img class="img1" src="icoontjes/sterren_leeg.png" alt="">
+
+                <img src="fotos/download_button.png" alt="">
+            </footer>
+        </article>
+
+                <article>
+            <header>
+                <a href="wowair_verhaal.html"><img href="wowair_verhaal.html" src="verhalen/verliefd.png" alt="verliefd"></a>
+                <span>Romantiek</span>
+            </header>
+            <footer>
+                <h3>Presentator die ten onrechte denkt aansluiting te hebben gevonden bij ‘de kids’</h3>
+
+               <!-- <span>Download</span> -->
+
+               <!-- <p>15 min</p>-->
+                <img class="img1" src="icoontjes/sterren_leeg.png" alt="">
+
+                <img src="fotos/download_button.png" alt="">
+            </footer>
+        </article>
+
+                <article>
+            <header>
+                <a href="wowair_verhaal.html"><img href="wowair_verhaal.html" src="verhalen/verliefd.png" alt="verliefd"></a>
+                <span>Romantiek</span>
+            </header>
+            <footer>
+                <h3>Gefrustreerd</h3>
+
+               <!-- <span>Download</span> -->
+
+               <!-- <p>15 min</p>-->
+                <img class="img1" src="icoontjes/sterren_leeg.png" alt="">
+
+                <img src="fotos/download_button.png" alt="">
             </footer>
         </article>
 
 
         <article>
-           <header>
-            <img src="fotos/droom.jpeg" alt="verliefd">
-            <span>2 sterren</span>
+            <header>
+                <a href="wowair_verhaal.html"><img href="wowair_verhaal.html" src="verhalen/gefrustreerd.jpeg" alt="verliefd"></a>
+                <span>Romantiek</span>
             </header>
             <footer>
-            <h2>Droom</h2>
-            <p class="tijdsduur">15 min</p>
-             </footer>
+                <h3>Gefrustreerd</h3>
 
+               <!-- <span>Download</span> -->
+
+                <p>15 min</p>
+                <img class="img1" src="icoontjes/sterren_leeg.png" alt="">
+
+                <img src="fotos/download_button.png" alt="">
+            </footer>
         </article>
 
 
         <article>
-           <header>
-            <img src="fotos/gefrustreerd.jpeg" alt="verliefd">
-            <span>3 sterren</span>
+            <header>
+                <a href="wowair_verhaal.html"><img href="wowair_verhaal.html" src="verhalen/gefrustreerd.jpeg" alt="verliefd"></a>
+                <span>Romantiek</span>
             </header>
             <footer>
-            <h2>Gefrustreerd</h2>
-            <p class="tijdsduur">15 min</p>
-            </footer>
+                <h3>Gefrustreerd</h3>
+                <!-- <span>Download</span> -->
+                <p>15 min</p>
 
+                <img src="fotos/download_button.png" alt="">
+            </footer>
+        </article>
+
+        <article>
+            <header>
+                <a href="wowair_verhaal.html"><img href="wowair_verhaal.html" src="verhalen/mop.png" alt="verliefd"></a>
+                <span>Mop</span>
+            </header>
+            <footer>
+                <h3>Verliefd</h3>
+                <span>Download</span>
+                <p>15 min</p>
+
+                <img src="fotos/download_button.png" alt="">
+            </footer>
+        </article>
+
+        <article>
+            <header>
+                <a href="wowair_verhaal.html"><img href="wowair_verhaal.html" src="verhalen/ericlucassen.jpg" alt="verliefd"></a>
+                <span>Romantiek</span>
+            </header>
+            <footer>
+                <h3>Waardeloos</h3>
+                <span>Download</span>
+                <p>15 min</p>
+
+                <img src="fotos/download_button.png" alt="">
+            </footer>
+        </article>
+
+        <article>
+            <header>
+                <a href="wowair_verhaal.html"><img href="wowair_verhaal.html" src="verhalen/vergezocht.jpeg" alt="verliefd"></a>
+                <span>Romantiek</span>
+            </header>
+            <footer>
+                <h3>Vergezocht</h3>
+                <span>Download</span>
+                <p>15 min</p>
+
+                <img src="fotos/download_button.png" alt="">
+            </footer>
+        </article>
+
+        <article>
+            <header>
+                <a href="wowair_verhaal.html"><img href="wowair_verhaal.html" src="verhalen/droom.png" alt="verliefd"></a>
+                <span>Romantiek</span>
+            </header>
+            <footer>
+                <h3>Droom</h3>
+                <span>Download</span>
+                <p>15 min</p>
+
+                <img src="fotos/download_button.png" alt="">
+            </footer>
         </article>
 
 
