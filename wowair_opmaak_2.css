@@ -1,10 +1,10 @@
-body{
+body {
 
     font-family: sans-serif;
     font-size: 1em;
 }
 
-ul{
+ul {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
@@ -24,43 +24,27 @@ ul > li:nth-child(3) {
     text-align: right
 }
 
-
-
-
-section article p{
-
-}
-
-header nav ul li:first-of-type img{
-    width: 30%;
+header nav ul li:first-of-type img {
+    width: 40%;
     max-width: 4em;
 }
 
 header nav ul li a img {
-    width: 50%;
+    width: 60%;
     max-width: 6em;
 }
 
-header nav ul li:last-of-type img{
-    width: 30%;
+header nav ul li:last-of-type img {
+    width: 40%;
     max-width: 4em;
-
 }
 
-
-
-
-
 form {
-    margin-left: 0;
     background-color: #f9f9f9;
-    color: #9f238A;
     border: 1px solid #e9e9ea;
 }
 
 form p {
-
-    display: block;
     margin: 0.5em;
     background-color: #720e5a;
     padding: 0.7em 1em;
@@ -72,17 +56,16 @@ form p {
     background-image: url(fotos/boekicon1.png);
     background-size: 9%;
     background-position: 1em center;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat;
 }
 
-fieldset{
+fieldset {
     border: none;
 
 }
 
 
-form fieldset legend{
-
+form fieldset legend {
     text-transform: uppercase;
     color: #9f238A;
     font-size: 1em;
@@ -94,7 +77,6 @@ form fieldset div {
     justify-content: space-between;
 }
 
-
 form fieldset div label {
     color: black;
     background-color: white;
@@ -103,7 +85,6 @@ form fieldset div label {
     width: 25%;
     padding: 1em;
     text-align: center;
-
 }
 
 form fieldset div input {
@@ -115,42 +96,29 @@ form fieldset div input {
     position: absolute;
 }
 
-input[type=checkbox]:checked + label{
-    background-color: #ffdf6a;  #ffdf6a
-    color: #9f238A;
+input[type=checkbox]:checked + label {
+    background-color: #ffdf6a;
 }
 
-form fieldset div select{
+form fieldset div select {
     background-color: white;
     font-size: 0.8em;
     border: 1px solid #ccc;
     width: 48%;
     padding: 0.5em;
-    display: inline-block;
-    -webkit-appearance:none;
-    -moz-appearance:none;
-    appearance:none;
-    cursor:pointer;
-     border-radius: 0;
-}
-
-
-select {
-  background-image:
-    linear-gradient(45deg, transparent 50%, black 50%),
+    cursor: pointer;
+    border-radius: 0;
+    background-image: linear-gradient(45deg, transparent 50%, black 50%),
     linear-gradient(135deg, black 50%, transparent 50%),
     linear-gradient(to right, white, white);
-  background-position:
-    calc(100% - 20px) calc(1em + 2px),
+    background-position: calc(100% - 20px) calc(1em + 2px),
     calc(100% - 15px) calc(1em + 2px),
     100% 0;
-  background-size:
-    5px 5px,
+    background-size: 5px 5px,
     5px 5px,
     2.5em 2.5em;
-  background-repeat: no-repeat;
+    background-repeat: no-repeat;
 }
-
 
 form fieldset input[type=text] {
     font-size: 0.8em;
@@ -160,7 +128,6 @@ form fieldset input[type=text] {
     padding: 1em;
     display: inline-block;
     border-radius: 0;
-    margin-bottom:  1em;
 }
 
 
@@ -185,104 +152,61 @@ form fieldset:last-of-type input {
     border: 1px solid #808081;
 }
 
-
-
-
-
-h2{
+h2 {
     padding-left: .9rem;
     color: black;
     font-weight: 100;
-
     margin-top: 1em;
     margin-bottom: 0.5em;
     font-size: 2em;
 }
 
-
-
 section {
     display: grid;
     grid-template-columns: auto;
-
-
 }
 
-
-
-
-
-
-
-
-article{
+article {
     border: 2px solid #d0e1e1;
     margin-bottom: 2em;
     margin-right: 0.2em;
     margin-left: 0.2em;
     position: relative;
     max-width: 100%;
-    display: inline-block;
     height: 24em;
 }
 
 
-
-
-
-
-
-@media (min-width:40em){
-   /* article{
-        min-width: 15em;
-        max-width: 48%;
-    }*/
+@media (min-width:40em) {
 
     section {
-    grid-template-columns:auto auto;
-
-  }
-
-
-    #bi{
-    background-image: none;
-}
-}
-
-
-@media (min-width:60em){
-   /* article{
-        max-width: 32%;
-        }*/
-
-    form{
-        min-width: 15em;
-        max-width: 30em;
-
+        grid-template-columns: auto auto;
     }
 
-        section {
-    grid-template-columns:33.33% 33.33% 33.33%;
-
-  }
-
-
-    #bi{
-    background-image: url(fotos/reykjavik.jpg);
-    background-position: center;
-    background-repeat: no-repeat; */
-    width: 100%;
-    padding: 1em;
-
-
-
-
-}
+    #achtergrondfoto {
+        background-image: none;
+    }
 }
 
+@media (min-width:60em) {
 
+    form {
+        min-width: 15em;
+        max-width: 30em;
+    }
 
+    section {
+        grid-template-columns: 33.33% 33.33% 33.33%;
+    }
 
+    #achtergrondfoto {
+        background-image: url(fotos/reykjavik.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        */ width: 100%;
+        padding: 1em;
+    }
+}
 
 article header {
     position: relative;
@@ -290,7 +214,7 @@ article header {
 }
 
 
-article header img{
+article header img {
     width: 100%;
     height: 11em;
     object-fit: cover;
@@ -298,7 +222,7 @@ article header img{
 }
 
 
-article header span{
+article header span {
     text-transform: uppercase;
     background-color: #9f238A;
     color: white;
@@ -309,23 +233,22 @@ article header span{
     left: 1em;
 }
 
-article footer{
+article footer {
     margin: 1em;
     display: grid;
     grid-template-rows: 9em 2em;
 
 }
 
-article footer h3{
+article footer h3 {
     grid-column: 1/4;
     margin: 0;
     font-size: 1.6em;
     font-weight: 100;
-
 }
 
 
-article footer span{
+article footer span {
     grid-column: 3/4;
     display: block;
     font-size: 0.7em;
@@ -333,20 +256,16 @@ article footer span{
     align-self: end;
 }
 
-article .img1{
+article footer #sterren {
     display: block;
     grid-column: 1/2;
     align-self: center;
     height: 1.6em;
     justify-self: center;
+    justify-self: start;
 }
 
-.img:checked {
-    background-image: url(icoontjes/sterren_vol.png)
-}
-
-
-article footer p{
+article footer p {
     margin: 0;
     font-size: 1em;
     font-weight: 200;
@@ -354,7 +273,7 @@ article footer p{
 
 }
 
-article footer img{
+article footer img {
     display: block;
     color: white;
     height: 2.5em;
@@ -364,31 +283,9 @@ article footer img{
     align-self: end;
 }
 
-
-
-
-
-
-.categorie_button:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    color: white;
-    background-color: #9f238A;
-}
-
-
-div input[type=button]:hover {
-    color: white;
-    background-color: #9f238A;
-}
-
-
-
-.verhaal1{
+.verhaal1 {
     width: 100%;
     height: 40em;
     object-fit: cover;
     object-position: center;
 }
-
-
-
